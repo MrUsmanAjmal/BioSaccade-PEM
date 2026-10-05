@@ -1,0 +1,21 @@
+\begin{table}[t]
+\centering
+\caption{Paired source-cluster comparisons of TwinAudit (ours) against each baseline (reds\_train\_full). Positive values favour ours; 95\% percentile bootstrap intervals; Holm-adjusted sign-flip p values.}
+\label{tab:paired_reds_train_full}
+\small
+\begin{tabular}{llrrrrrrr}
+\toprule
+dataset & regime & Baseline & metric & Effect & Estimate & 95\% CI low & 95\% CI high & Holm p \\
+\midrule
+REDS\_train & nominal & Joint gaze, fixed proxy (prior version) & MSE & \% reduction & -1.7036 & -1.8572 & -1.5585 & 0.00015 \\
+REDS\_train & nominal & Joint gaze, fixed proxy (prior version) & Audit PQV & \% reduction & 75.71 & 73.93 & 77.59 & 0.00015 \\
+REDS\_train & nominal & Joint gaze, fixed proxy (prior version) & PSNR & dB gain & -0.0819 & -0.0883 & -0.0758 & 0.00015 \\
+REDS\_train & nominal & Greedy gaze & MSE & \% reduction & -2.0088 & -2.1833 & -1.8404 & 0.00015 \\
+REDS\_train & nominal & Greedy gaze & Audit PQV & \% reduction & 97.81 & 97.56 & 98.04 & 0.00015 \\
+REDS\_train & nominal & Greedy gaze & PSNR & dB gain & -0.0961 & -0.1029 & -0.0896 & 0.00015 \\
+REDS\_train & nominal & PPAT (2026), M=1 & MSE & \% reduction & 3.9449 & 3.6584 & 4.2456 & 0.00015 \\
+REDS\_train & nominal & PPAT (2026), M=1 & Audit PQV & \% reduction & -83.62 & -95.36 & -71.26 & 0.00015 \\
+REDS\_train & nominal & PPAT (2026), M=1 & PSNR & dB gain & 0.2152 & 0.2002 & 0.2308 & 0.00015 \\
+\bottomrule
+\end{tabular}
+\end{table}

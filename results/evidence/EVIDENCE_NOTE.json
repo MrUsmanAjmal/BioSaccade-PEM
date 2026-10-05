@@ -1,0 +1,11 @@
+{
+  "original_archive": "local_01_91e457e261dc_evidence.zip",
+  "original_sha256": "b6dde4e0ae2cda5829baa04082484ee4083cf0891bf4d281b28d33612f6b9a51",
+  "packaged_sha256": "1f5f9460cd9f4ff5407ab4ee0958604d26f614d624968d20e369fe4a8a21db2f",
+  "only_change": "['results/data_integrity.json']: the local dataset folder paths in dataset_roots were replaced by <DAVIS_ROOT>/<REDS_ROOT> placeholders; all other members are byte-identical to the original archive. In addition, members containing dataset images were removed because the datasets may not be redistributed: results/example.npz, results/figures/06_example.pdf, results/figures/06_example.png. All other members are byte-identical.",
+  "removed_members": [
+    "results/example.npz",
+    "results/figures/06_example.pdf",
+    "results/figures/06_example.png"
+  ]
+}

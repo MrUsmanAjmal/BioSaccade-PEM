@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{REDS: write\_kappa study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:write_kappa_REDS}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+Ours, write kappa=4 & nominal & 15 & 15 & 25.88 & 0.7368 & 1.76e-09 & 1.28e-10 \\
+Ours, write kappa=8 & nominal & 15 & 15 & 25.88 & 0.7368 & 1.76e-09 & 1.28e-10 \\
+Ours, write kappa=2 & nominal & 15 & 15 & 25.88 & 0.7368 & 1.73e-09 & 1.06e-10 \\
+Ours, write kappa=1.25 & nominal & 15 & 15 & 25.86 & 0.7360 & 1.51e-09 & 1.06e-10 \\
+Ours, write kappa=1 & nominal & 15 & 15 & 25.67 & 0.7319 & 7.37e-10 & 7.68e-11 \\
+\bottomrule
+\end{tabular}
+\end{table}

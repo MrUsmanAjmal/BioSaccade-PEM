@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\caption{DAVIS: neural\_sensor study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:neural_sensor_DAVIS}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & nominal & 10 & 10 & 28.60 & 0.8275 & 9.98e-09 & 1.49e-09 \\
+NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & nominal & 10 & 10 & 28.51 & 0.8266 & 1.14e-08 & 1.54e-09 \\
+Joint gaze, fixed proxy (prior version) & nominal & 10 & 10 & 28.46 & 0.8148 & 4.96e-09 & -- \\
+SPAN-F (NTIRE 2025) + patch + memory & nominal & 10 & 10 & 28.46 & 0.8256 & 5.3e-09 & 7.28e-10 \\
+TwinAudit (ours) & nominal & 10 & 10 & 28.39 & 0.8129 & 1.33e-09 & 4.87e-11 \\
+SPAN-F (NTIRE 2025) + patch & nominal & 10 & 10 & 28.38 & 0.8213 & 4.61e-09 & -- \\
+NanoSR (NTIRE 2025) + patch + memory & nominal & 10 & 10 & 28.37 & 0.8252 & 5.88e-09 & 7.68e-10 \\
+NanoSR (NTIRE 2025) + patch & nominal & 10 & 10 & 28.29 & 0.8214 & 5.06e-09 & -- \\
+SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & nominal & 10 & 10 & 28.20 & 0.8216 & 1.89e-08 & 1.75e-09 \\
+Uniform gaze & nominal & 10 & 10 & 28.08 & 0.8107 & 1.74e-09 & -- \\
+SCMSR (NTIRE 2025) + patch + memory & nominal & 10 & 10 & 28.07 & 0.8206 & 8.48e-09 & 8.38e-10 \\
+SCMSR (NTIRE 2025) + patch & nominal & 10 & 10 & 27.99 & 0.8165 & 8.13e-09 & -- \\
+BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & nominal & 10 & 10 & 27.22 & 0.8099 & 6.31e-08 & 1.71e-09 \\
+BasicVSR++ causal (CVPR 2022) + patch + memory & nominal & 10 & 10 & 26.93 & 0.8066 & 9.56e-08 & 6.89e-10 \\
+BasicVSR++ causal (CVPR 2022) + patch & nominal & 10 & 10 & 26.79 & 0.8034 & 1.02e-07 & -- \\
+BasicVSR++ offline, non-causal (CVPR 2022) + patch & nominal & 10 & 10 & 25.97 & 0.7963 & 2.73e-07 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,13 @@
+\begin{table}[t]
+\centering
+\caption{REDS\_train: bias\_negative\_control study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:bias_negative_control_REDS_train}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+TwinAudit (ours) & biased\_stress & 15 & 15 & 25.78 & 0.7065 & 4.24e-10 & 7.82e-11 \\
+\bottomrule
+\end{tabular}
+\end{table}

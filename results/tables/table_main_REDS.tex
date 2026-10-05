@@ -1,0 +1,34 @@
+\begin{table}[t]
+\centering
+\caption{REDS: main study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:main_REDS}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+Greedy gaze & drift & 30 & 30 & 25.46 & 0.6913 & 4.14e-08 & -- \\
+Joint gaze, fixed proxy (prior version) & drift & 30 & 30 & 25.45 & 0.6908 & 3.81e-09 & -- \\
+Ours w/o online proxy mixture & drift & 30 & 30 & 25.41 & 0.6890 & 1.44e-09 & 1.66e-10 \\
+Ours w/o write-audit constraint & drift & 30 & 30 & 25.39 & 0.6885 & 1.19e-09 & 1.53e-10 \\
+TwinAudit (ours) & drift & 30 & 30 & 25.38 & 0.6882 & 1.05e-09 & 1.34e-10 \\
+Benefit-softmax gaze & drift & 30 & 30 & 25.36 & 0.6889 & 6.8e-09 & -- \\
+Risk-only gaze & drift & 30 & 30 & 25.24 & 0.6853 & 1.16e-09 & -- \\
+Audit-only gaze & drift & 30 & 30 & 25.21 & 0.6824 & 2.37e-10 & -- \\
+TwinAudit-strict (κw = 1) & drift & 30 & 30 & 25.20 & 0.6836 & 4.31e-10 & 1.01e-10 \\
+PPAT (2026), M=1 & drift & 30 & 30 & 25.20 & 0.6832 & 5.91e-10 & -- \\
+Uniform gaze & drift & 30 & 30 & 25.19 & 0.6840 & 1.13e-09 & -- \\
+Greedy gaze & nominal & 30 & 30 & 26.13 & 0.7460 & 4.27e-08 & -- \\
+Joint gaze, fixed proxy (prior version) & nominal & 30 & 30 & 26.11 & 0.7452 & 4.05e-09 & -- \\
+Ours w/o online proxy mixture & nominal & 30 & 30 & 26.06 & 0.7435 & 1.41e-09 & 1.2e-10 \\
+Ours w/o write-audit constraint & nominal & 30 & 30 & 26.05 & 0.7431 & 1.3e-09 & 1.16e-10 \\
+TwinAudit (ours) & nominal & 30 & 30 & 26.04 & 0.7429 & 1.13e-09 & 9.55e-11 \\
+Benefit-softmax gaze & nominal & 30 & 30 & 26.02 & 0.7440 & 6.93e-09 & -- \\
+Risk-only gaze & nominal & 30 & 30 & 25.86 & 0.7402 & 1.13e-09 & -- \\
+Audit-only gaze & nominal & 30 & 30 & 25.83 & 0.7365 & 2.27e-10 & -- \\
+TwinAudit-strict (κw = 1) & nominal & 30 & 30 & 25.83 & 0.7382 & 4.34e-10 & 5.5e-11 \\
+PPAT (2026), M=1 & nominal & 30 & 30 & 25.82 & 0.7379 & 5.83e-10 & -- \\
+Uniform gaze & nominal & 30 & 30 & 25.80 & 0.7386 & 1.07e-09 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

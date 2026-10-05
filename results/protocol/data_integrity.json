@@ -1,0 +1,41 @@
+{
+  "clip_counts": {
+    "DAVIS": 90,
+    "REDS": 30,
+    "REDS_train": 240
+  },
+  "content_digests": {
+    "DAVIS": "abb4549a047d2db3ff89e2bed5afcdf56fc4728e0c0475093ce91ea97cac80d0",
+    "REDS": "b0f33968d08c4823facc73eb3af9590aaeb35c2eafa4cec5fc2ae37fefcb7b72",
+    "REDS_train": "6a624b97733151ef0e6b4e99a52fed75424c1a05bb30cee7d931487601364f0a"
+  },
+  "dataset_roots": {
+    "DAVIS": "<DAVIS_ROOT>",
+    "REDS": "<REDS_ROOT>\\val_sharp",
+    "REDS_train": "<REDS_ROOT>\\train_sharp"
+  },
+  "exact_duplicate_sets": [],
+  "limitation": "Content hashing detects exact duplicates; it cannot certify absence of near-duplicates or pretrained data overlap.",
+  "official_sources": {
+    "DAVIS": {
+      "sha256": "e3d0b5b77c3d031b000a19e0e25e3e2cac65d183755601bc2cf066df1a2aa492",
+      "source": "https://davischallenge.org/davis2017/code.html",
+      "url": "https://data.vision.ee.ethz.ch/csergi/share/davis/DAVIS-2017-trainval-480p.zip"
+    },
+    "REDS": {
+      "source": "https://seungjunnah.github.io/Datasets/reds.html",
+      "split": "val_sharp, 30 clips x 100 frames",
+      "url": "https://huggingface.co/datasets/snah/REDS/resolve/main/val_sharp.zip"
+    },
+    "REDS_train": {
+      "note": "Supplied as a local copy. Replaces Vimeo-90K (official download unavailable). No model in this study is trained on REDS, so it is unseen external test data.",
+      "source": "https://seungjunnah.github.io/Datasets/reds.html",
+      "split": "train_sharp, 240 clips x 100 frames",
+      "url": null
+    }
+  },
+  "pilot_scope": "all configured datasets",
+  "reds_grouping": "each REDS clip folder is one source cluster; REDS publishes no raw-video identity mapping, so near-duplicate scenes across clips cannot be excluded",
+  "reds_train_role": "REDS train_sharp replaces Vimeo-90K and is used only as unseen external test data: no model in this study is trained on REDS.",
+  "source_separation": true
+}

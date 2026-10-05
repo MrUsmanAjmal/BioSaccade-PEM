@@ -1,0 +1,96 @@
+\begin{table}[t]
+\centering
+\caption{Same-backbone gaze comparisons (neural\_native): each published backbone with TwinAudit gaze vs the same backbone with uniform gaze (+ memory, + patch). Positive values favour TwinAudit gaze; paired source-cluster 95\% percentile bootstrap intervals; Holm-adjusted sign-flip p values. Comparison added after the laptop pilot, before the paper run.}
+\label{tab:backbone_gaze_neural_native}
+\small
+\begin{tabular}{llrrrrrrrr}
+\toprule
+Dataset & Regime & Ours & Baseline & Metric & Effect & Estimate & 95\% CI low & 95\% CI high & Holm p \\
+\midrule
+DAVIS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & MSE & \% reduction & 1.8052 & -0.2882 & 4.5085 & 0.1348 \\
+DAVIS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & Audit PQV & \% reduction & 16.43 & -23.79 & 48.27 & 1.0000 \\
+DAVIS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & Write PQV & \% reduction & -167.00 & -357.01 & -36.52 & 0.0234 \\
+DAVIS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & PSNR & dB gain & 0.1506 & 0.0655 & 0.2353 & 0.0195 \\
+DAVIS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch & MSE & \% reduction & 9.1021 & 3.7258 & 11.70 & 0.0156 \\
+DAVIS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch & Audit PQV & \% reduction & 4.8134 & -44.81 & 40.36 & 1.0000 \\
+DAVIS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch & PSNR & dB gain & 0.2952 & 0.1747 & 0.4226 & 0.0156 \\
+DAVIS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & MSE & \% reduction & 2.1715 & 0.5042 & 4.2020 & 0.0703 \\
+DAVIS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & Audit PQV & \% reduction & -11.19 & -68.30 & 33.84 & 1.0000 \\
+DAVIS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & Write PQV & \% reduction & -162.52 & -328.86 & -61.27 & 0.0156 \\
+DAVIS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & PSNR & dB gain & 0.1362 & 0.0634 & 0.2105 & 0.0195 \\
+DAVIS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch & MSE & \% reduction & 9.3201 & 4.6774 & 12.06 & 0.0156 \\
+DAVIS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch & Audit PQV & \% reduction & -33.27 & -108.72 & 15.96 & 1.0000 \\
+DAVIS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch & PSNR & dB gain & 0.3277 & 0.2151 & 0.4457 & 0.0156 \\
+DAVIS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & MSE & \% reduction & 2.2075 & 0.9030 & 4.4938 & 0.0234 \\
+DAVIS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & Audit PQV & \% reduction & -11.16 & -59.31 & 29.95 & 1.0000 \\
+DAVIS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & Write PQV & \% reduction & -143.27 & -272.47 & -46.97 & 0.0234 \\
+DAVIS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & PSNR & dB gain & 0.1478 & 0.0735 & 0.2306 & 0.0156 \\
+DAVIS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch & MSE & \% reduction & 9.4425 & 5.1276 & 11.95 & 0.0156 \\
+DAVIS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch & Audit PQV & \% reduction & -38.25 & -108.27 & 6.1591 & 1.0000 \\
+DAVIS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch & PSNR & dB gain & 0.3439 & 0.2337 & 0.4622 & 0.0156 \\
+DAVIS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & MSE & \% reduction & 2.5000 & 1.2003 & 4.8100 & 0.0156 \\
+DAVIS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & Audit PQV & \% reduction & -15.60 & -57.93 & 25.75 & 1.0000 \\
+DAVIS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & Write PQV & \% reduction & -130.45 & -254.29 & -46.32 & 0.0234 \\
+DAVIS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & PSNR & dB gain & 0.1533 & 0.0830 & 0.2355 & 0.0156 \\
+DAVIS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch & MSE & \% reduction & 9.7006 & 5.4450 & 12.25 & 0.0156 \\
+DAVIS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch & Audit PQV & \% reduction & -44.18 & -102.57 & 4.1100 & 1.0000 \\
+DAVIS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch & PSNR & dB gain & 0.3507 & 0.2400 & 0.4641 & 0.0156 \\
+REDS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & MSE & \% reduction & 3.0083 & 2.3639 & 3.7259 & 0.0012 \\
+REDS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & Audit PQV & \% reduction & 29.69 & 17.94 & 42.57 & 0.0022 \\
+REDS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & Write PQV & \% reduction & -66.81 & -100.62 & -35.41 & 0.0006 \\
+REDS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & PSNR & dB gain & 0.1538 & 0.1198 & 0.1875 & 0.0012 \\
+REDS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch & MSE & \% reduction & 5.8779 & 4.5856 & 7.1928 & 0.0012 \\
+REDS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch & Audit PQV & \% reduction & 22.02 & 9.2850 & 36.24 & 0.0882 \\
+REDS & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch & PSNR & dB gain & 0.2627 & 0.2189 & 0.3075 & 0.0012 \\
+REDS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & MSE & \% reduction & 3.2640 & 2.5081 & 4.1032 & 0.0012 \\
+REDS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & Audit PQV & \% reduction & -15.87 & -29.62 & -0.9900 & 0.8449 \\
+REDS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & Write PQV & \% reduction & -57.01 & -89.37 & -34.23 & 0.0006 \\
+REDS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & PSNR & dB gain & 0.1624 & 0.1172 & 0.2089 & 0.0012 \\
+REDS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch & MSE & \% reduction & 7.7152 & 6.2062 & 9.1951 & 0.0012 \\
+REDS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch & Audit PQV & \% reduction & -58.32 & -99.91 & -25.86 & 0.0022 \\
+REDS & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch & PSNR & dB gain & 0.3378 & 0.2852 & 0.3904 & 0.0012 \\
+REDS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & MSE & \% reduction & 3.4379 & 2.6311 & 4.3372 & 0.0012 \\
+REDS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & Audit PQV & \% reduction & -20.63 & -35.11 & -5.1444 & 0.3472 \\
+REDS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & Write PQV & \% reduction & -57.51 & -106.05 & -26.71 & 0.0025 \\
+REDS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & PSNR & dB gain & 0.1680 & 0.1204 & 0.2175 & 0.0012 \\
+REDS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch & MSE & \% reduction & 7.8865 & 6.2684 & 9.4396 & 0.0012 \\
+REDS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch & Audit PQV & \% reduction & -65.00 & -110.72 & -30.46 & 0.0012 \\
+REDS & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch & PSNR & dB gain & 0.3435 & 0.2885 & 0.3987 & 0.0012 \\
+REDS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & MSE & \% reduction & 3.4278 & 2.6769 & 4.2224 & 0.0012 \\
+REDS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & Audit PQV & \% reduction & -24.12 & -36.66 & -9.8798 & 0.0551 \\
+REDS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & Write PQV & \% reduction & -60.33 & -99.51 & -31.34 & 0.0006 \\
+REDS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & PSNR & dB gain & 0.1707 & 0.1257 & 0.2183 & 0.0012 \\
+REDS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch & MSE & \% reduction & 7.9530 & 6.4394 & 9.4275 & 0.0012 \\
+REDS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch & Audit PQV & \% reduction & -74.74 & -117.51 & -40.99 & 0.0012 \\
+REDS & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch & PSNR & dB gain & 0.3502 & 0.2988 & 0.4046 & 0.0012 \\
+REDS\_train & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & MSE & \% reduction & 2.6339 & 1.7126 & 3.6250 & 0.0012 \\
+REDS\_train & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & Audit PQV & \% reduction & 35.83 & 14.99 & 48.92 & 0.0450 \\
+REDS\_train & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & Write PQV & \% reduction & -135.91 & -188.52 & -66.49 & 0.0006 \\
+REDS\_train & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch + memory & PSNR & dB gain & 0.1429 & 0.1023 & 0.1830 & 0.0012 \\
+REDS\_train & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch & MSE & \% reduction & 4.6298 & 2.9976 & 6.3960 & 0.0012 \\
+REDS\_train & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch & Audit PQV & \% reduction & 30.53 & 6.8754 & 45.02 & 0.4327 \\
+REDS\_train & clean & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & BasicVSR++ causal (CVPR 2022) + patch & PSNR & dB gain & 0.2487 & 0.1876 & 0.3101 & 0.0012 \\
+REDS\_train & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & MSE & \% reduction & 2.6428 & 1.6907 & 3.6360 & 0.0012 \\
+REDS\_train & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & Audit PQV & \% reduction & 6.8140 & -20.65 & 23.12 & 1.0000 \\
+REDS\_train & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & Write PQV & \% reduction & -133.91 & -157.52 & -72.30 & 0.0009 \\
+REDS\_train & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch + memory & PSNR & dB gain & 0.1412 & 0.0934 & 0.1864 & 0.0012 \\
+REDS\_train & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch & MSE & \% reduction & 6.3615 & 4.5078 & 8.2341 & 0.0012 \\
+REDS\_train & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch & Audit PQV & \% reduction & -10.70 & -47.33 & 10.42 & 1.0000 \\
+REDS\_train & clean & NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & NanoSR (NTIRE 2025) + patch & PSNR & dB gain & 0.3170 & 0.2456 & 0.3895 & 0.0012 \\
+REDS\_train & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & MSE & \% reduction & 2.6930 & 1.6572 & 3.7273 & 0.00225 \\
+REDS\_train & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & Audit PQV & \% reduction & -0.0813 & -23.65 & 15.70 & 1.0000 \\
+REDS\_train & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & Write PQV & \% reduction & -145.35 & -174.74 & -87.62 & 0.0006 \\
+REDS\_train & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch + memory & PSNR & dB gain & 0.1419 & 0.0941 & 0.1896 & 0.0012 \\
+REDS\_train & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch & MSE & \% reduction & 6.4262 & 4.4342 & 8.4103 & 0.0012 \\
+REDS\_train & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch & Audit PQV & \% reduction & -19.70 & -52.12 & 3.3495 & 1.0000 \\
+REDS\_train & clean & SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & SCMSR (NTIRE 2025) + patch & PSNR & dB gain & 0.3172 & 0.2406 & 0.3932 & 0.0012 \\
+REDS\_train & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & MSE & \% reduction & 2.8535 & 1.8057 & 3.8798 & 0.0012 \\
+REDS\_train & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & Audit PQV & \% reduction & -8.8220 & -33.14 & 7.3900 & 1.0000 \\
+REDS\_train & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & Write PQV & \% reduction & -143.33 & -174.96 & -85.31 & 0.0006 \\
+REDS\_train & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch + memory & PSNR & dB gain & 0.1499 & 0.0995 & 0.1974 & 0.0012 \\
+REDS\_train & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch & MSE & \% reduction & 6.6748 & 4.7180 & 8.5674 & 0.0012 \\
+REDS\_train & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch & Audit PQV & \% reduction & -35.24 & -75.30 & -9.9270 & 0.1980 \\
+REDS\_train & clean & SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & SPAN-F (NTIRE 2025) + patch & PSNR & dB gain & 0.3305 & 0.2530 & 0.4057 & 0.0012 \\
+\bottomrule
+\end{tabular}
+\end{table}

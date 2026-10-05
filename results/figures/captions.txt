@@ -1,0 +1,45 @@
+00_graphical_abstract. Computation order and causal feedback. This schematic contains no empirical performance claim.
+
+01_controlled_policy_main_DAVIS_drift. Equal sensing budgets and common PEM backbone. Sources are averaged before aggregation; lower is better in both panels. The right panel is evaluator-only predictable quadratic variation, not an online variance certificate.
+
+01_controlled_policy_main_DAVIS_nominal. Equal sensing budgets and common PEM backbone. Sources are averaged before aggregation; lower is better in both panels. The right panel is evaluator-only predictable quadratic variation, not an online variance certificate.
+
+01_controlled_policy_main_REDS_drift. Equal sensing budgets and common PEM backbone. Sources are averaged before aggregation; lower is better in both panels. The right panel is evaluator-only predictable quadratic variation, not an online variance certificate.
+
+01_controlled_policy_main_REDS_nominal. Equal sensing budgets and common PEM backbone. Sources are averaged before aggregation; lower is better in both panels. The right panel is evaluator-only predictable quadratic variation, not an online variance certificate.
+
+01_controlled_policy_reds_train_detail_REDS_train_nominal. Equal sensing budgets and common PEM backbone. Sources are averaged before aggregation; lower is better in both panels. The right panel is evaluator-only predictable quadratic variation, not an online variance certificate.
+
+01_controlled_policy_reds_train_full_REDS_train_nominal. Equal sensing budgets and common PEM backbone. Sources are averaged before aggregation; lower is better in both panels. The right panel is evaluator-only predictable quadratic variation, not an online variance certificate.
+
+02_published_backbones_neural_native_DAVIS_clean. Frozen published checkpoints (NTIRE 2025 ESR; BasicVSR++ CVPR 2022, Vimeo-90K BI) in the common one-patch sensor interface. Patch: SR output plus the paid patch; memory: identical causal residual wrapper; ours: the same backbone with the proposed gaze. Grey: offline BasicVSR++ reads future frames and is a non-causal reference only.
+
+02_published_backbones_neural_native_REDS_clean. Frozen published checkpoints (NTIRE 2025 ESR; BasicVSR++ CVPR 2022, Vimeo-90K BI) in the common one-patch sensor interface. Patch: SR output plus the paid patch; memory: identical causal residual wrapper; ours: the same backbone with the proposed gaze. Grey: offline BasicVSR++ reads future frames and is a non-causal reference only.
+
+02_published_backbones_neural_native_REDS_train_clean. Frozen published checkpoints (NTIRE 2025 ESR; BasicVSR++ CVPR 2022, Vimeo-90K BI) in the common one-patch sensor interface. Patch: SR output plus the paid patch; memory: identical causal residual wrapper; ours: the same backbone with the proposed gaze. Grey: offline BasicVSR++ reads future frames and is a non-causal reference only.
+
+02_published_backbones_neural_sensor_DAVIS_nominal. Frozen published checkpoints (NTIRE 2025 ESR; BasicVSR++ CVPR 2022, Vimeo-90K BI) in the common one-patch sensor interface. Patch: SR output plus the paid patch; memory: identical causal residual wrapper; ours: the same backbone with the proposed gaze. Grey: offline BasicVSR++ reads future frames and is a non-causal reference only.
+
+02_published_backbones_neural_sensor_REDS_nominal. Frozen published checkpoints (NTIRE 2025 ESR; BasicVSR++ CVPR 2022, Vimeo-90K BI) in the common one-patch sensor interface. Patch: SR output plus the paid patch; memory: identical causal residual wrapper; ours: the same backbone with the proposed gaze. Grey: offline BasicVSR++ reads future frames and is a non-causal reference only.
+
+02_published_backbones_neural_sensor_REDS_train_nominal. Frozen published checkpoints (NTIRE 2025 ESR; BasicVSR++ CVPR 2022, Vimeo-90K BI) in the common one-patch sensor interface. Patch: SR output plus the paid patch; memory: identical causal residual wrapper; ours: the same backbone with the proposed gaze. Grey: offline BasicVSR++ reads future frames and is a non-causal reference only.
+
+03_same_gaze_proxy_ablation. Paired source-cluster 95% percentile bootstrap intervals for ratios of means. Negative values are retained. Holm adjustment applies to p values in the separate table, not these intervals.
+
+04_tradeoff_DAVIS_nominal. Prespecified budget sweep. The curve is an empirical trade-off and is not asserted to be a Pareto frontier or monotone in realized reconstruction.
+
+04_tradeoff_REDS_nominal. Prespecified budget sweep. The curve is an empirical trade-off and is not asserted to be a Pareto frontier or monotone in realized reconstruction.
+
+04_tradeoff_REDS_train_nominal. Prespecified budget sweep. The curve is an empirical trade-off and is not asserted to be a Pareto frontier or monotone in realized reconstruction.
+
+07_twin_audit_reliability. Full R9 reports two distinct design-based audits from the same paid observations: overall memory benefit and the one-step counterfactual value of the previous foveal write.
+
+08_write_tradeoff_DAVIS_nominal. Prespecified twin-write budget sweep; lower κw enforces stronger auditability of the one-step memory-write effect.
+
+08_write_tradeoff_REDS_nominal. Prespecified twin-write budget sweep; lower κw enforces stronger auditability of the one-step memory-write effect.
+
+08_write_tradeoff_REDS_train_nominal. Prespecified twin-write budget sweep; lower κw enforces stronger auditability of the one-step memory-write effect.
+
+05_online_audit. Preselected example; conservative range-based confidence sequence for the running on-trajectory mean. Weights used at frame t are fixed before its foveal query.
+
+06_example. Preselected final frame with identical display scaling; the reference is evaluator-only. A high-DPI export does not add detail to the source image.

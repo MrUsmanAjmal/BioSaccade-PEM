@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{DAVIS: kappa study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:kappa_DAVIS}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+Ours, kappa=8 & nominal & 15 & 15 & 29.49 & 0.8170 & 1.32e-09 & 6.89e-11 \\
+Ours, kappa=4 & nominal & 15 & 15 & 29.47 & 0.8167 & 1.31e-09 & 6.83e-11 \\
+Ours, kappa=2 & nominal & 15 & 15 & 29.44 & 0.8165 & 1.07e-09 & 5.82e-11 \\
+Ours, kappa=1 & nominal & 15 & 15 & 29.15 & 0.8122 & 4.44e-10 & 1.72e-11 \\
+\bottomrule
+\end{tabular}
+\end{table}

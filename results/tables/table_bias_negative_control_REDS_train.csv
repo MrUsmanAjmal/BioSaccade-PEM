@@ -1,0 +1,2 @@
+Method,Regime,Sources,Clips,PSNR (dB),SSIM,Audit PQV,Write PQV
+TwinAudit (ours),biased_stress,15,15,25.7778099945192,0.7064973026246748,4.243310461748406e-10,7.815653102727404e-11

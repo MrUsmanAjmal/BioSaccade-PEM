@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{DAVIS: scale8 study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:scale8_DAVIS}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+Greedy gaze & nominal & 15 & 15 & 25.81 & 0.6825 & 3.95e-07 & -- \\
+Joint gaze, fixed proxy (prior version) & nominal & 15 & 15 & 25.78 & 0.6815 & 4.04e-08 & -- \\
+Ours w/o write-audit constraint & nominal & 15 & 15 & 25.73 & 0.6816 & 9.98e-09 & 8.39e-10 \\
+TwinAudit (ours) & nominal & 15 & 15 & 25.71 & 0.6814 & 8.67e-09 & 7.65e-10 \\
+Uniform gaze & nominal & 15 & 15 & 25.45 & 0.6793 & 1.49e-08 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

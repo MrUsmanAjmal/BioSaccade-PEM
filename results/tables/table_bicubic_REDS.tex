@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{REDS: bicubic study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:bicubic_REDS}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+Greedy gaze & nominal & 15 & 15 & 26.14 & 0.7384 & 5.87e-08 & -- \\
+Joint gaze, fixed proxy (prior version) & nominal & 15 & 15 & 26.11 & 0.7367 & 5.25e-09 & -- \\
+Ours w/o write-audit constraint & nominal & 15 & 15 & 26.04 & 0.7344 & 1.64e-09 & 9.57e-11 \\
+TwinAudit (ours) & nominal & 15 & 15 & 26.02 & 0.7339 & 1.33e-09 & 8.69e-11 \\
+Uniform gaze & nominal & 15 & 15 & 25.76 & 0.7292 & 1.54e-09 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

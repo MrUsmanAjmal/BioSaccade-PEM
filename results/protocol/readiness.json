@@ -1,0 +1,20 @@
+{
+  "baselines_executed": [
+    "BasicVSRpp2022_causal",
+    "BasicVSRpp2022_offline",
+    "NanoSR2025",
+    "SCMSR2025",
+    "SPANF2025"
+  ],
+  "blockers": [
+    "Scientific superiority and practical gains must be read from the actual tables, including negative results.",
+    "Neural baselines are external checkpoints evaluated in a common one-patch sensor interface (native bicubic and sensor-noise conditions); they are not their original benchmark protocols.",
+    "CRFP (foveated VSR) and AdaGlimpse/AME (active exploration) were not executed: their action spaces or released weights do not fit this fixed-grid interface without retraining. The manuscript must state this and compare against them conceptually and via the fixed-grid uncertainty baselines.",
+    "Manuscript rewrite, English editing and Elsevier IVC formatting remain necessary."
+  ],
+  "large_scale_protocol_executed": true,
+  "profile": "paper",
+  "protocol_complete": true,
+  "rows": 8355,
+  "submission_ready": false
+}

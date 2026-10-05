@@ -1,0 +1,51 @@
+\begin{table}[t]
+\centering
+\caption{Paired source-cluster comparisons of TwinAudit (ours) against each baseline (bicubic). Positive values favour ours; 95\% percentile bootstrap intervals; Holm-adjusted sign-flip p values.}
+\label{tab:paired_bicubic}
+\small
+\begin{tabular}{llrrrrrrr}
+\toprule
+dataset & regime & Baseline & metric & Effect & Estimate & 95\% CI low & 95\% CI high & Holm p \\
+\midrule
+DAVIS & nominal & Joint gaze, fixed proxy (prior version) & MSE & \% reduction & -2.1500 & -3.5795 & -0.9028 & 0.0009 \\
+DAVIS & nominal & Joint gaze, fixed proxy (prior version) & Audit PQV & \% reduction & 74.49 & 66.42 & 86.04 & 0.001 \\
+DAVIS & nominal & Joint gaze, fixed proxy (prior version) & PSNR & dB gain & -0.0843 & -0.1286 & -0.0448 & 0.0008 \\
+DAVIS & nominal & Ours w/o write-audit constraint & MSE & \% reduction & 0.0775 & -0.2749 & 0.3673 & 1.0000 \\
+DAVIS & nominal & Ours w/o write-audit constraint & Audit PQV & \% reduction & -1.6336 & -4.5262 & 5.2911 & 1.0000 \\
+DAVIS & nominal & Ours w/o write-audit constraint & Write PQV & \% reduction & 18.60 & 4.2039 & 33.18 & 0.0979 \\
+DAVIS & nominal & Ours w/o write-audit constraint & PSNR & dB gain & 0.0012 & -0.00968 & 0.0129 & 1.0000 \\
+DAVIS & nominal & Greedy gaze & MSE & \% reduction & -2.5640 & -3.5367 & -1.5109 & 0.0009 \\
+DAVIS & nominal & Greedy gaze & Audit PQV & \% reduction & 97.65 & 96.42 & 98.60 & 0.00175 \\
+DAVIS & nominal & Greedy gaze & PSNR & dB gain & -0.1014 & -0.1437 & -0.0649 & 0.0008 \\
+DAVIS & nominal & Uniform gaze & MSE & \% reduction & 5.1574 & 2.2183 & 8.7897 & 0.0104 \\
+DAVIS & nominal & Uniform gaze & Audit PQV & \% reduction & 14.67 & -31.17 & 41.76 & 1.0000 \\
+DAVIS & nominal & Uniform gaze & PSNR & dB gain & 0.3040 & 0.1861 & 0.4217 & 0.0008 \\
+REDS & nominal & Joint gaze, fixed proxy (prior version) & MSE & \% reduction & -1.9350 & -2.4460 & -1.4283 & 0.0009 \\
+REDS & nominal & Joint gaze, fixed proxy (prior version) & Audit PQV & \% reduction & 74.73 & 70.72 & 77.50 & 0.0012 \\
+REDS & nominal & Joint gaze, fixed proxy (prior version) & PSNR & dB gain & -0.0867 & -0.1094 & -0.0651 & 0.0006 \\
+REDS & nominal & Ours w/o write-audit constraint & MSE & \% reduction & -0.3579 & -0.7765 & -0.00479 & 0.2664 \\
+REDS & nominal & Ours w/o write-audit constraint & Audit PQV & \% reduction & 18.94 & 1.8023 & 25.45 & 0.2957 \\
+REDS & nominal & Ours w/o write-audit constraint & Write PQV & \% reduction & 9.2198 & -0.4629 & 16.51 & 0.1167 \\
+REDS & nominal & Ours w/o write-audit constraint & PSNR & dB gain & -0.0172 & -0.0306 & -0.00425 & 0.0849 \\
+REDS & nominal & Greedy gaze & MSE & \% reduction & -2.8241 & -3.6065 & -2.0265 & 0.0009 \\
+REDS & nominal & Greedy gaze & Audit PQV & \% reduction & 97.74 & 97.21 & 98.08 & 0.0006 \\
+REDS & nominal & Greedy gaze & PSNR & dB gain & -0.1243 & -0.1545 & -0.0942 & 0.0008 \\
+REDS & nominal & Uniform gaze & MSE & \% reduction & 4.9371 & 3.8691 & 6.3761 & 0.0006 \\
+REDS & nominal & Uniform gaze & Audit PQV & \% reduction & 13.89 & -15.18 & 28.45 & 1.0000 \\
+REDS & nominal & Uniform gaze & PSNR & dB gain & 0.2502 & 0.1943 & 0.3072 & 0.0006 \\
+REDS\_train & nominal & Joint gaze, fixed proxy (prior version) & MSE & \% reduction & -1.6047 & -2.3485 & -1.0059 & 0.0009 \\
+REDS\_train & nominal & Joint gaze, fixed proxy (prior version) & Audit PQV & \% reduction & 75.15 & 72.65 & 77.56 & 0.001 \\
+REDS\_train & nominal & Joint gaze, fixed proxy (prior version) & PSNR & dB gain & -0.0774 & -0.1001 & -0.0564 & 0.0008 \\
+REDS\_train & nominal & Ours w/o write-audit constraint & MSE & \% reduction & -0.1354 & -0.5111 & 0.2138 & 1.0000 \\
+REDS\_train & nominal & Ours w/o write-audit constraint & Audit PQV & \% reduction & 10.67 & 5.0195 & 15.65 & 0.0501 \\
+REDS\_train & nominal & Ours w/o write-audit constraint & Write PQV & \% reduction & 12.38 & 6.0936 & 16.78 & 0.0222 \\
+REDS\_train & nominal & Ours w/o write-audit constraint & PSNR & dB gain & -0.000828 & -0.0187 & 0.0140 & 1.0000 \\
+REDS\_train & nominal & Greedy gaze & MSE & \% reduction & -2.2437 & -3.0717 & -1.5796 & 0.0006 \\
+REDS\_train & nominal & Greedy gaze & Audit PQV & \% reduction & 97.56 & 97.19 & 97.83 & 0.0006 \\
+REDS\_train & nominal & Greedy gaze & PSNR & dB gain & -0.1053 & -0.1307 & -0.0814 & 0.0006 \\
+REDS\_train & nominal & Uniform gaze & MSE & \% reduction & 4.0801 & 3.0399 & 5.3028 & 0.0006 \\
+REDS\_train & nominal & Uniform gaze & Audit PQV & \% reduction & -4.3407 & -20.20 & 7.0410 & 1.0000 \\
+REDS\_train & nominal & Uniform gaze & PSNR & dB gain & 0.2140 & 0.1663 & 0.2616 & 0.0006 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{REDS\_train: certificate study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:certificate_REDS_train}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+Ours, certificate kappa=4 & nominal & 15 & 15 & 26.62 & 0.7660 & 6.74e-10 & 8.47e-11 \\
+Ours, certificate kappa=2 & nominal & 15 & 15 & 26.59 & 0.7649 & 3.12e-10 & 4.85e-11 \\
+Ours, certificate kappa=1.5 & nominal & 15 & 15 & 26.55 & 0.7635 & 1.9e-10 & 3.61e-11 \\
+Ours, certificate kappa=1.25 & nominal & 15 & 15 & 26.51 & 0.7621 & 1.27e-10 & 2.54e-11 \\
+Ours, certificate kappa=1.05 & nominal & 15 & 15 & 26.42 & 0.7591 & 6.66e-11 & 1.51e-11 \\
+\bottomrule
+\end{tabular}
+\end{table}

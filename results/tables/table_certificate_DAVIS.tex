@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{DAVIS: certificate study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:certificate_DAVIS}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+Ours, certificate kappa=4 & nominal & 15 & 15 & 29.44 & 0.8172 & 1.85e-09 & 9.17e-11 \\
+Ours, certificate kappa=2 & nominal & 15 & 15 & 29.41 & 0.8155 & 9.43e-10 & 4.09e-11 \\
+Ours, certificate kappa=1.5 & nominal & 15 & 15 & 29.34 & 0.8132 & 3.88e-10 & 2.57e-11 \\
+Ours, certificate kappa=1.25 & nominal & 15 & 15 & 29.34 & 0.8123 & 2.71e-10 & 2.05e-11 \\
+Ours, certificate kappa=1.05 & nominal & 15 & 15 & 29.18 & 0.8077 & 1.08e-10 & 1.14e-11 \\
+\bottomrule
+\end{tabular}
+\end{table}

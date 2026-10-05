@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\caption{REDS: neural\_native study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:neural_native_REDS}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+BasicVSR++ offline, non-causal (CVPR 2022) + patch & clean & 30 & 30 & 30.26 & 0.8759 & 1.36e-08 & -- \\
+BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & clean & 30 & 30 & 29.77 & 0.8632 & 8.26e-09 & 2.11e-10 \\
+BasicVSR++ causal (CVPR 2022) + patch + memory & clean & 30 & 30 & 29.61 & 0.8624 & 1.18e-08 & 1.26e-10 \\
+BasicVSR++ causal (CVPR 2022) + patch & clean & 30 & 30 & 29.50 & 0.8590 & 1.06e-08 & -- \\
+NanoSR (NTIRE 2025) + TwinAudit gaze (ours) & clean & 30 & 30 & 27.77 & 0.8017 & 4.04e-09 & 3.95e-10 \\
+SCMSR (NTIRE 2025) + TwinAudit gaze (ours) & clean & 30 & 30 & 27.74 & 0.8007 & 4.15e-09 & 4.01e-10 \\
+SPAN-F (NTIRE 2025) + TwinAudit gaze (ours) & clean & 30 & 30 & 27.60 & 0.7967 & 3.82e-09 & 4.28e-10 \\
+NanoSR (NTIRE 2025) + patch + memory & clean & 30 & 30 & 27.60 & 0.8005 & 3.48e-09 & 2.51e-10 \\
+SCMSR (NTIRE 2025) + patch + memory & clean & 30 & 30 & 27.57 & 0.7993 & 3.44e-09 & 2.55e-10 \\
+NanoSR (NTIRE 2025) + patch & clean & 30 & 30 & 27.43 & 0.7920 & 2.55e-09 & -- \\
+SPAN-F (NTIRE 2025) + patch + memory & clean & 30 & 30 & 27.43 & 0.7953 & 3.08e-09 & 2.67e-10 \\
+SCMSR (NTIRE 2025) + patch & clean & 30 & 30 & 27.39 & 0.7908 & 2.51e-09 & -- \\
+SPAN-F (NTIRE 2025) + patch & clean & 30 & 30 & 27.25 & 0.7864 & 2.19e-09 & -- \\
+Joint gaze, fixed proxy (prior version) & clean & 30 & 30 & 26.32 & 0.7484 & 3.46e-09 & -- \\
+TwinAudit (ours) & clean & 30 & 30 & 26.23 & 0.7461 & 1.02e-09 & 8.26e-11 \\
+Uniform gaze & clean & 30 & 30 & 25.99 & 0.7425 & 9.43e-10 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

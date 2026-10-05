@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Serial per-frame latency (no competing processes): preview/flow, controller and audit, and SR including device transfers.}
+\label{tab:latency}
+\small
+\begin{tabular}{llrrr}
+\toprule
+Method & Mean ms/frame & p95 ms/frame & Controller ms/frame & SR parameters \\
+\midrule
+BasicVSR++ causal (CVPR 2022) + patch + memory & 7978.61 & 8540.48 & 191.86 & 7322927.00 \\
+BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & 7977.35 & 8539.92 & 190.60 & 7322927.00 \\
+BasicVSR++ causal (CVPR 2022) + patch & 7888.89 & 8443.89 & 102.14 & 7322927.00 \\
+BasicVSR++ offline, non-causal (CVPR 2022) + patch & 1431.81 & 1465.00 & 102.26 & 7322927.00 \\
+Joint gaze, fixed proxy (prior version) & 166.95 & 204.82 & 108.74 & -- \\
+TwinAudit (ours) & 254.77 & 300.09 & 196.56 & -- \\
+Greedy gaze & 164.17 & 194.08 & 105.96 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

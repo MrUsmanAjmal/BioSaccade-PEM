@@ -1,0 +1,8 @@
+{
+  "cpu_workers": 5,
+  "elapsed_seconds": 145570.87882259997,
+  "peak_cuda_allocated_bytes": null,
+  "process_rss_at_end_bytes": 2253889536,
+  "reused_neural_predictions": "SR predictions are computed once per common preview, but measured SR time is charged to every method using them.",
+  "timing_scope": "Report latency ONLY from study == 'timing', which runs serially without competing processes. Per-frame times in other studies were measured under parallel load. Times include preview/flow, controller/audit and SR with device transfers; evaluator, disk IO, fitting and downloads are excluded."
+}

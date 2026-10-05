@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{REDS\_train: reds\_train\_detail study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:reds_train_detail_REDS_train}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+Greedy gaze & nominal & 60 & 60 & 26.15 & 0.7446 & 2.6e-08 & -- \\
+Joint gaze, fixed proxy (prior version) & nominal & 60 & 60 & 26.13 & 0.7439 & 2.49e-09 & -- \\
+Ours w/o online proxy mixture & nominal & 60 & 60 & 26.08 & 0.7420 & 7.91e-10 & 1.07e-10 \\
+Ours w/o write-audit constraint & nominal & 60 & 60 & 26.06 & 0.7418 & 7.09e-10 & 1.13e-10 \\
+TwinAudit (ours) & nominal & 60 & 60 & 26.06 & 0.7415 & 6.42e-10 & 9.73e-11 \\
+Benefit-softmax gaze & nominal & 60 & 60 & 26.04 & 0.7429 & 3.12e-09 & -- \\
+Risk-only gaze & nominal & 60 & 60 & 25.90 & 0.7398 & 6.47e-10 & -- \\
+PPAT (2026), M=1 & nominal & 60 & 60 & 25.85 & 0.7374 & 3.63e-10 & -- \\
+Audit-only gaze & nominal & 60 & 60 & 25.85 & 0.7358 & 1.59e-10 & -- \\
+Uniform gaze & nominal & 60 & 60 & 25.84 & 0.7382 & 6.49e-10 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

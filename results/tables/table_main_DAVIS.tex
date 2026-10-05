@@ -1,0 +1,34 @@
+\begin{table}[t]
+\centering
+\caption{DAVIS: main study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:main_DAVIS}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+Greedy gaze & drift & 40 & 40 & 27.38 & 0.7422 & 4.9e-08 & -- \\
+Joint gaze, fixed proxy (prior version) & drift & 40 & 40 & 27.36 & 0.7415 & 4.48e-09 & -- \\
+Ours w/o online proxy mixture & drift & 40 & 40 & 27.33 & 0.7403 & 1.18e-09 & 1.64e-10 \\
+Ours w/o write-audit constraint & drift & 40 & 40 & 27.30 & 0.7397 & 9.78e-10 & 1.73e-10 \\
+TwinAudit (ours) & drift & 40 & 40 & 27.30 & 0.7397 & 8.97e-10 & 1.56e-10 \\
+Benefit-softmax gaze & drift & 40 & 40 & 27.28 & 0.7405 & 7.99e-09 & -- \\
+Risk-only gaze & drift & 40 & 40 & 27.15 & 0.7375 & 1.52e-09 & -- \\
+TwinAudit-strict (κw = 1) & drift & 40 & 40 & 27.12 & 0.7360 & 3.94e-10 & 8.18e-11 \\
+Audit-only gaze & drift & 40 & 40 & 27.10 & 0.7344 & 2e-10 & -- \\
+Uniform gaze & drift & 40 & 40 & 27.09 & 0.7362 & 1.35e-09 & -- \\
+PPAT (2026), M=1 & drift & 40 & 40 & 27.09 & 0.7354 & 5.72e-10 & -- \\
+Greedy gaze & nominal & 40 & 40 & 28.56 & 0.8083 & 5.31e-08 & -- \\
+Joint gaze, fixed proxy (prior version) & nominal & 40 & 40 & 28.53 & 0.8077 & 4.87e-09 & -- \\
+Ours w/o online proxy mixture & nominal & 40 & 40 & 28.47 & 0.8059 & 1.26e-09 & 1.01e-10 \\
+Ours w/o write-audit constraint & nominal & 40 & 40 & 28.46 & 0.8060 & 1.06e-09 & 9.31e-11 \\
+TwinAudit (ours) & nominal & 40 & 40 & 28.45 & 0.8057 & 9.19e-10 & 9.08e-11 \\
+Benefit-softmax gaze & nominal & 40 & 40 & 28.43 & 0.8071 & 7.31e-09 & -- \\
+Risk-only gaze & nominal & 40 & 40 & 28.27 & 0.8047 & 1.29e-09 & -- \\
+TwinAudit-strict (κw = 1) & nominal & 40 & 40 & 28.20 & 0.8024 & 3.81e-10 & 4.31e-11 \\
+PPAT (2026), M=1 & nominal & 40 & 40 & 28.20 & 0.8027 & 5.69e-10 & -- \\
+Uniform gaze & nominal & 40 & 40 & 28.19 & 0.8032 & 1.21e-09 & -- \\
+Audit-only gaze & nominal & 40 & 40 & 28.18 & 0.8002 & 2.06e-10 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

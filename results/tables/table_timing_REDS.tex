@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{REDS: timing study. Means over source clusters. Audit PQV is the evaluator-side predictable quadratic variation of the memory-benefit audit divided by T^2 (lower is more reliable).}
+\label{tab:timing_REDS}
+\small
+\begin{tabular}{llrrrrrr}
+\toprule
+Method & Regime & Sources & Clips & PSNR (dB) & SSIM & Audit PQV & Write PQV \\
+\midrule
+Greedy gaze & nominal & 10 & 10 & 26.41 & 0.7451 & 4.89e-08 & -- \\
+Joint gaze, fixed proxy (prior version) & nominal & 10 & 10 & 26.38 & 0.7441 & 4.78e-09 & -- \\
+TwinAudit (ours) & nominal & 10 & 10 & 26.32 & 0.7421 & 1.3e-09 & 6.96e-11 \\
+BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & nominal & 10 & 10 & 24.28 & 0.7195 & 1.73e-07 & 2.15e-09 \\
+BasicVSR++ causal (CVPR 2022) + patch + memory & nominal & 10 & 10 & 23.98 & 0.7151 & 9.59e-08 & 1.28e-09 \\
+BasicVSR++ causal (CVPR 2022) + patch & nominal & 10 & 10 & 23.85 & 0.7145 & 1.02e-07 & -- \\
+BasicVSR++ offline, non-causal (CVPR 2022) + patch & nominal & 10 & 10 & 21.89 & 0.6647 & 2.91e-07 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

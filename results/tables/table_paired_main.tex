@@ -1,0 +1,144 @@
+\begin{table}[t]
+\centering
+\caption{Paired source-cluster comparisons of TwinAudit (ours) against each baseline (main). Positive values favour ours; 95\% percentile bootstrap intervals; Holm-adjusted sign-flip p values.}
+\label{tab:paired_main}
+\small
+\begin{tabular}{llrrrrrrr}
+\toprule
+dataset & regime & Baseline & metric & Effect & Estimate & 95\% CI low & 95\% CI high & Holm p \\
+\midrule
+DAVIS & drift & Joint gaze, fixed proxy (prior version) & MSE & \% reduction & -1.5156 & -2.0202 & -1.0570 & 0.002 \\
+DAVIS & drift & Joint gaze, fixed proxy (prior version) & Audit PQV & \% reduction & 79.99 & 73.95 & 83.62 & 0.002 \\
+DAVIS & drift & Joint gaze, fixed proxy (prior version) & PSNR & dB gain & -0.0552 & -0.0733 & -0.0388 & 0.002 \\
+DAVIS & drift & Ours w/o write-audit constraint & MSE & \% reduction & -0.0385 & -0.2615 & 0.1672 & 1.0000 \\
+DAVIS & drift & Ours w/o write-audit constraint & Audit PQV & \% reduction & 8.2738 & 3.3225 & 13.07 & 0.0266 \\
+DAVIS & drift & Ours w/o write-audit constraint & Write PQV & \% reduction & 10.16 & 2.1322 & 16.54 & 0.0724 \\
+DAVIS & drift & Ours w/o write-audit constraint & PSNR & dB gain & 2.64e-05 & -0.00767 & 0.00716 & 1.0000 \\
+DAVIS & drift & TwinAudit-strict (κw = 1) & MSE & \% reduction & 3.6589 & 2.8644 & 4.5105 & 0.002 \\
+DAVIS & drift & TwinAudit-strict (κw = 1) & Audit PQV & \% reduction & -127.56 & -163.11 & -92.28 & 0.002 \\
+DAVIS & drift & TwinAudit-strict (κw = 1) & Write PQV & \% reduction & -90.36 & -128.76 & -64.28 & 0.0006 \\
+DAVIS & drift & TwinAudit-strict (κw = 1) & PSNR & dB gain & 0.1668 & 0.1355 & 0.1990 & 0.002 \\
+DAVIS & drift & Ours w/o online proxy mixture & MSE & \% reduction & -0.6347 & -0.9254 & -0.3777 & 0.002 \\
+DAVIS & drift & Ours w/o online proxy mixture & Audit PQV & \% reduction & 23.68 & 15.68 & 30.08 & 0.002 \\
+DAVIS & drift & Ours w/o online proxy mixture & Write PQV & \% reduction & 4.7597 & -9.1681 & 17.46 & 1.0000 \\
+DAVIS & drift & Ours w/o online proxy mixture & PSNR & dB gain & -0.0259 & -0.0370 & -0.0163 & 0.002 \\
+DAVIS & drift & Audit-only gaze & MSE & \% reduction & 3.8498 & 2.8465 & 5.1550 & 0.002 \\
+DAVIS & drift & Audit-only gaze & Audit PQV & \% reduction & -348.83 & -587.35 & -230.98 & 0.002 \\
+DAVIS & drift & Audit-only gaze & PSNR & dB gain & 0.1797 & 0.1402 & 0.2253 & 0.002 \\
+DAVIS & drift & Greedy gaze & MSE & \% reduction & -1.9153 & -2.5635 & -1.3467 & 0.002 \\
+DAVIS & drift & Greedy gaze & Audit PQV & \% reduction & 98.17 & 97.63 & 98.52 & 0.002 \\
+DAVIS & drift & Greedy gaze & PSNR & dB gain & -0.0718 & -0.0925 & -0.0527 & 0.002 \\
+DAVIS & drift & Risk-only gaze & MSE & \% reduction & 2.7528 & 2.0445 & 3.5494 & 0.002 \\
+DAVIS & drift & Risk-only gaze & Audit PQV & \% reduction & 41.08 & 24.74 & 50.76 & 0.002 \\
+DAVIS & drift & Risk-only gaze & PSNR & dB gain & 0.1343 & 0.1033 & 0.1667 & 0.002 \\
+DAVIS & drift & Benefit-softmax gaze & MSE & \% reduction & 0.0564 & -0.7452 & 0.7544 & 1.0000 \\
+DAVIS & drift & Benefit-softmax gaze & Audit PQV & \% reduction & 88.78 & 86.55 & 90.44 & 0.002 \\
+DAVIS & drift & Benefit-softmax gaze & PSNR & dB gain & 0.0179 & -0.00607 & 0.0402 & 0.5782 \\
+DAVIS & drift & Uniform gaze & MSE & \% reduction & 3.7461 & 2.9017 & 4.6783 & 0.002 \\
+DAVIS & drift & Uniform gaze & Audit PQV & \% reduction & 33.39 & 16.10 & 46.05 & 0.002 \\
+DAVIS & drift & Uniform gaze & PSNR & dB gain & 0.1811 & 0.1418 & 0.2230 & 0.002 \\
+DAVIS & drift & PPAT (2026), M=1 & MSE & \% reduction & 3.7209 & 2.9916 & 4.5974 & 0.002 \\
+DAVIS & drift & PPAT (2026), M=1 & Audit PQV & \% reduction & -56.90 & -83.86 & -35.22 & 0.002 \\
+DAVIS & drift & PPAT (2026), M=1 & PSNR & dB gain & 0.1842 & 0.1442 & 0.2284 & 0.002 \\
+DAVIS & nominal & Joint gaze, fixed proxy (prior version) & MSE & \% reduction & -1.8829 & -2.5725 & -1.3549 & 0.002 \\
+DAVIS & nominal & Joint gaze, fixed proxy (prior version) & Audit PQV & \% reduction & 81.13 & 76.54 & 84.56 & 0.002 \\
+DAVIS & nominal & Joint gaze, fixed proxy (prior version) & PSNR & dB gain & -0.0853 & -0.1141 & -0.0623 & 0.002 \\
+DAVIS & nominal & Ours w/o write-audit constraint & MSE & \% reduction & -0.3076 & -0.5420 & -0.1042 & 0.0452 \\
+DAVIS & nominal & Ours w/o write-audit constraint & Audit PQV & \% reduction & 13.52 & 9.2134 & 17.18 & 0.0027 \\
+DAVIS & nominal & Ours w/o write-audit constraint & Write PQV & \% reduction & 2.4401 & -11.90 & 12.17 & 1.0000 \\
+DAVIS & nominal & Ours w/o write-audit constraint & PSNR & dB gain & -0.0160 & -0.0297 & -0.00599 & 0.0136 \\
+DAVIS & nominal & TwinAudit-strict (κw = 1) & MSE & \% reduction & 4.4439 & 3.5397 & 5.4849 & 0.002 \\
+DAVIS & nominal & TwinAudit-strict (κw = 1) & Audit PQV & \% reduction & -141.38 & -173.87 & -112.86 & 0.002 \\
+DAVIS & nominal & TwinAudit-strict (κw = 1) & Write PQV & \% reduction & -110.60 & -171.13 & -61.00 & 0.0006 \\
+DAVIS & nominal & TwinAudit-strict (κw = 1) & PSNR & dB gain & 0.2387 & 0.1943 & 0.2862 & 0.002 \\
+DAVIS & nominal & Ours w/o online proxy mixture & MSE & \% reduction & -0.5376 & -0.8339 & -0.2445 & 0.0081 \\
+DAVIS & nominal & Ours w/o online proxy mixture & Audit PQV & \% reduction & 27.24 & 19.33 & 31.43 & 0.002 \\
+DAVIS & nominal & Ours w/o online proxy mixture & Write PQV & \% reduction & 10.49 & 3.4902 & 16.65 & 0.0724 \\
+DAVIS & nominal & Ours w/o online proxy mixture & PSNR & dB gain & -0.0200 & -0.0304 & -0.00977 & 0.0045 \\
+DAVIS & nominal & Audit-only gaze & MSE & \% reduction & 5.0589 & 3.5811 & 6.9510 & 0.002 \\
+DAVIS & nominal & Audit-only gaze & Audit PQV & \% reduction & -345.01 & -503.56 & -244.20 & 0.002 \\
+DAVIS & nominal & Audit-only gaze & PSNR & dB gain & 0.2648 & 0.2010 & 0.3363 & 0.002 \\
+DAVIS & nominal & Greedy gaze & MSE & \% reduction & -2.3350 & -2.9799 & -1.8114 & 0.002 \\
+DAVIS & nominal & Greedy gaze & Audit PQV & \% reduction & 98.27 & 97.78 & 98.60 & 0.002 \\
+DAVIS & nominal & Greedy gaze & PSNR & dB gain & -0.1080 & -0.1406 & -0.0836 & 0.002 \\
+DAVIS & nominal & Risk-only gaze & MSE & \% reduction & 2.9374 & 1.9849 & 4.0806 & 0.002 \\
+DAVIS & nominal & Risk-only gaze & Audit PQV & \% reduction & 28.88 & 11.77 & 37.28 & 0.1272 \\
+DAVIS & nominal & Risk-only gaze & PSNR & dB gain & 0.1782 & 0.1308 & 0.2281 & 0.002 \\
+DAVIS & nominal & Benefit-softmax gaze & MSE & \% reduction & -0.1134 & -1.0108 & 0.6831 & 1.0000 \\
+DAVIS & nominal & Benefit-softmax gaze & Audit PQV & \% reduction & 87.44 & 82.74 & 89.77 & 0.002 \\
+DAVIS & nominal & Benefit-softmax gaze & PSNR & dB gain & 0.0121 & -0.0247 & 0.0438 & 1.0000 \\
+DAVIS & nominal & Uniform gaze & MSE & \% reduction & 4.3774 & 3.2501 & 5.7209 & 0.002 \\
+DAVIS & nominal & Uniform gaze & Audit PQV & \% reduction & 24.10 & 10.00 & 32.65 & 0.0351 \\
+DAVIS & nominal & Uniform gaze & PSNR & dB gain & 0.2497 & 0.1925 & 0.3106 & 0.002 \\
+DAVIS & nominal & PPAT (2026), M=1 & MSE & \% reduction & 4.1474 & 3.1670 & 5.3138 & 0.002 \\
+DAVIS & nominal & PPAT (2026), M=1 & Audit PQV & \% reduction & -61.34 & -88.74 & -32.68 & 0.0136 \\
+DAVIS & nominal & PPAT (2026), M=1 & PSNR & dB gain & 0.2453 & 0.1933 & 0.3007 & 0.002 \\
+REDS & drift & Joint gaze, fixed proxy (prior version) & MSE & \% reduction & -1.5193 & -1.8655 & -1.1851 & 0.002 \\
+REDS & drift & Joint gaze, fixed proxy (prior version) & Audit PQV & \% reduction & 72.54 & 70.65 & 74.87 & 0.002 \\
+REDS & drift & Joint gaze, fixed proxy (prior version) & PSNR & dB gain & -0.0637 & -0.0763 & -0.0520 & 0.002 \\
+REDS & drift & Ours w/o write-audit constraint & MSE & \% reduction & -0.1340 & -0.3664 & 0.0693 & 1.0000 \\
+REDS & drift & Ours w/o write-audit constraint & Audit PQV & \% reduction & 12.15 & 4.2326 & 20.88 & 0.002 \\
+REDS & drift & Ours w/o write-audit constraint & Write PQV & \% reduction & 12.87 & 6.9950 & 17.98 & 0.0044 \\
+REDS & drift & Ours w/o write-audit constraint & PSNR & dB gain & -0.00608 & -0.0147 & 0.00236 & 0.5782 \\
+REDS & drift & TwinAudit-strict (κw = 1) & MSE & \% reduction & 3.6631 & 3.1688 & 4.2144 & 0.002 \\
+REDS & drift & TwinAudit-strict (κw = 1) & Audit PQV & \% reduction & -142.77 & -165.02 & -124.24 & 0.002 \\
+REDS & drift & TwinAudit-strict (κw = 1) & Write PQV & \% reduction & -32.34 & -70.92 & -9.3661 & 0.0156 \\
+REDS & drift & TwinAudit-strict (κw = 1) & PSNR & dB gain & 0.1663 & 0.1434 & 0.1908 & 0.002 \\
+REDS & drift & Ours w/o online proxy mixture & MSE & \% reduction & -0.5739 & -0.8300 & -0.3473 & 0.002 \\
+REDS & drift & Ours w/o online proxy mixture & Audit PQV & \% reduction & 27.45 & 18.85 & 31.37 & 0.002 \\
+REDS & drift & Ours w/o online proxy mixture & Write PQV & \% reduction & 19.28 & 10.62 & 27.38 & 0.0006 \\
+REDS & drift & Ours w/o online proxy mixture & PSNR & dB gain & -0.0249 & -0.0350 & -0.0158 & 0.002 \\
+REDS & drift & Audit-only gaze & MSE & \% reduction & 3.4909 & 2.9100 & 4.1469 & 0.002 \\
+REDS & drift & Audit-only gaze & Audit PQV & \% reduction & -342.17 & -441.03 & -300.86 & 0.002 \\
+REDS & drift & Audit-only gaze & PSNR & dB gain & 0.1608 & 0.1352 & 0.1871 & 0.002 \\
+REDS & drift & Greedy gaze & MSE & \% reduction & -1.6754 & -2.0534 & -1.3232 & 0.002 \\
+REDS & drift & Greedy gaze & Audit PQV & \% reduction & 97.47 & 97.29 & 97.64 & 0.002 \\
+REDS & drift & Greedy gaze & PSNR & dB gain & -0.0711 & -0.0846 & -0.0582 & 0.002 \\
+REDS & drift & Risk-only gaze & MSE & \% reduction & 2.7756 & 2.3638 & 3.2721 & 0.002 \\
+REDS & drift & Risk-only gaze & Audit PQV & \% reduction & 9.9770 & -2.1276 & 17.87 & 0.3833 \\
+REDS & drift & Risk-only gaze & PSNR & dB gain & 0.1319 & 0.1123 & 0.1527 & 0.002 \\
+REDS & drift & Benefit-softmax gaze & MSE & \% reduction & 0.2536 & -0.0504 & 0.5602 & 0.5365 \\
+REDS & drift & Benefit-softmax gaze & Audit PQV & \% reduction & 84.59 & 80.58 & 86.25 & 0.002 \\
+REDS & drift & Benefit-softmax gaze & PSNR & dB gain & 0.0175 & 0.0059 & 0.0286 & 0.0384 \\
+REDS & drift & Uniform gaze & MSE & \% reduction & 3.5850 & 3.0724 & 4.1776 & 0.002 \\
+REDS & drift & Uniform gaze & Audit PQV & \% reduction & 7.6827 & 2.0886 & 12.76 & 0.1272 \\
+REDS & drift & Uniform gaze & PSNR & dB gain & 0.1692 & 0.1438 & 0.1968 & 0.002 \\
+REDS & drift & PPAT (2026), M=1 & MSE & \% reduction & 3.6237 & 3.1030 & 4.1949 & 0.002 \\
+REDS & drift & PPAT (2026), M=1 & Audit PQV & \% reduction & -77.30 & -90.80 & -64.30 & 0.002 \\
+REDS & drift & PPAT (2026), M=1 & PSNR & dB gain & 0.1702 & 0.1438 & 0.1986 & 0.002 \\
+REDS & nominal & Joint gaze, fixed proxy (prior version) & MSE & \% reduction & -1.6054 & -1.9056 & -1.3015 & 0.002 \\
+REDS & nominal & Joint gaze, fixed proxy (prior version) & Audit PQV & \% reduction & 72.15 & 70.01 & 74.76 & 0.002 \\
+REDS & nominal & Joint gaze, fixed proxy (prior version) & PSNR & dB gain & -0.0715 & -0.0838 & -0.0600 & 0.002 \\
+REDS & nominal & Ours w/o write-audit constraint & MSE & \% reduction & -0.1858 & -0.3015 & -0.0660 & 0.0675 \\
+REDS & nominal & Ours w/o write-audit constraint & Audit PQV & \% reduction & 13.32 & 9.0217 & 15.05 & 0.002 \\
+REDS & nominal & Ours w/o write-audit constraint & Write PQV & \% reduction & 17.44 & 7.5845 & 24.11 & 0.0302 \\
+REDS & nominal & Ours w/o write-audit constraint & PSNR & dB gain & -0.00653 & -0.0115 & -0.00147 & 0.0907 \\
+REDS & nominal & TwinAudit-strict (κw = 1) & MSE & \% reduction & 4.1777 & 3.5822 & 4.8648 & 0.002 \\
+REDS & nominal & TwinAudit-strict (κw = 1) & Audit PQV & \% reduction & -159.75 & -177.03 & -146.68 & 0.002 \\
+REDS & nominal & TwinAudit-strict (κw = 1) & Write PQV & \% reduction & -73.84 & -109.69 & -52.58 & 0.0006 \\
+REDS & nominal & TwinAudit-strict (κw = 1) & PSNR & dB gain & 0.2045 & 0.1725 & 0.2376 & 0.002 \\
+REDS & nominal & Ours w/o online proxy mixture & MSE & \% reduction & -0.5873 & -0.8443 & -0.3386 & 0.002 \\
+REDS & nominal & Ours w/o online proxy mixture & Audit PQV & \% reduction & 19.76 & 12.82 & 25.09 & 0.002 \\
+REDS & nominal & Ours w/o online proxy mixture & Write PQV & \% reduction & 20.60 & 12.38 & 26.00 & 0.0063 \\
+REDS & nominal & Ours w/o online proxy mixture & PSNR & dB gain & -0.0217 & -0.0316 & -0.0122 & 0.002 \\
+REDS & nominal & Audit-only gaze & MSE & \% reduction & 4.3714 & 3.7766 & 4.9792 & 0.002 \\
+REDS & nominal & Audit-only gaze & Audit PQV & \% reduction & -395.76 & -488.91 & -339.17 & 0.002 \\
+REDS & nominal & Audit-only gaze & PSNR & dB gain & 0.2027 & 0.1739 & 0.2311 & 0.002 \\
+REDS & nominal & Greedy gaze & MSE & \% reduction & -1.9719 & -2.3316 & -1.6285 & 0.002 \\
+REDS & nominal & Greedy gaze & Audit PQV & \% reduction & 97.36 & 97.11 & 97.62 & 0.002 \\
+REDS & nominal & Greedy gaze & PSNR & dB gain & -0.0900 & -0.1051 & -0.0758 & 0.002 \\
+REDS & nominal & Risk-only gaze & MSE & \% reduction & 3.3481 & 2.8654 & 3.9346 & 0.002 \\
+REDS & nominal & Risk-only gaze & Audit PQV & \% reduction & 0.2760 & -18.45 & 8.2575 & 0.9899 \\
+REDS & nominal & Risk-only gaze & PSNR & dB gain & 0.1685 & 0.1420 & 0.1969 & 0.002 \\
+REDS & nominal & Benefit-softmax gaze & MSE & \% reduction & 0.3248 & 0.0633 & 0.6240 & 0.1446 \\
+REDS & nominal & Benefit-softmax gaze & Audit PQV & \% reduction & 83.73 & 76.09 & 86.76 & 0.002 \\
+REDS & nominal & Benefit-softmax gaze & PSNR & dB gain & 0.0225 & 0.0109 & 0.0342 & 0.0064 \\
+REDS & nominal & Uniform gaze & MSE & \% reduction & 4.5140 & 3.8350 & 5.3457 & 0.002 \\
+REDS & nominal & Uniform gaze & Audit PQV & \% reduction & -5.6272 & -17.87 & -0.0256 & 0.2268 \\
+REDS & nominal & Uniform gaze & PSNR & dB gain & 0.2258 & 0.1899 & 0.2631 & 0.002 \\
+REDS & nominal & PPAT (2026), M=1 & MSE & \% reduction & 4.3032 & 3.7009 & 5.0141 & 0.002 \\
+REDS & nominal & PPAT (2026), M=1 & Audit PQV & \% reduction & -93.45 & -105.08 & -84.19 & 0.002 \\
+REDS & nominal & PPAT (2026), M=1 & PSNR & dB gain & 0.2096 & 0.1799 & 0.2398 & 0.002 \\
+\bottomrule
+\end{tabular}
+\end{table}

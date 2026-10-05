@@ -1,0 +1,32 @@
+\begin{table}[t]
+\centering
+\caption{Paired source-cluster comparisons of TwinAudit (ours) against each baseline (timing). Positive values favour ours; 95\% percentile bootstrap intervals; Holm-adjusted sign-flip p values.}
+\label{tab:paired_timing}
+\small
+\begin{tabular}{llrrrrrrr}
+\toprule
+dataset & regime & Baseline & metric & Effect & Estimate & 95\% CI low & 95\% CI high & Holm p \\
+\midrule
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + patch + memory & MSE & \% reduction & 44.09 & 35.05 & 51.13 & 0.0117 \\
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + patch + memory & Audit PQV & \% reduction & 98.65 & 97.85 & 99.63 & 0.0117 \\
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + patch + memory & Write PQV & \% reduction & 94.57 & 89.66 & 97.12 & 0.00391 \\
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + patch + memory & PSNR & dB gain & 2.4521 & 1.8400 & 3.0447 & 0.0117 \\
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & MSE & \% reduction & 40.91 & 31.30 & 48.18 & 0.0117 \\
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & Audit PQV & \% reduction & 99.25 & 98.80 & 99.77 & 0.0117 \\
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & Write PQV & \% reduction & 96.76 & 94.79 & 98.12 & 0.00391 \\
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + TwinAudit gaze (ours) & PSNR & dB gain & 2.1584 & 1.5656 & 2.7493 & 0.0117 \\
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + patch & MSE & \% reduction & 46.43 & 36.46 & 53.64 & 0.0117 \\
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + patch & Audit PQV & \% reduction & 98.72 & 97.99 & 99.65 & 0.0117 \\
+REDS & nominal & BasicVSR++ causal (CVPR 2022) + patch & PSNR & dB gain & 2.5954 & 1.9253 & 3.2407 & 0.0117 \\
+REDS & nominal & BasicVSR++ offline, non-causal (CVPR 2022) + patch & MSE & \% reduction & 66.85 & 56.21 & 73.93 & 0.0117 \\
+REDS & nominal & BasicVSR++ offline, non-causal (CVPR 2022) + patch & Audit PQV & \% reduction & 99.55 & 99.03 & 99.90 & 0.0117 \\
+REDS & nominal & BasicVSR++ offline, non-causal (CVPR 2022) + patch & PSNR & dB gain & 4.5355 & 3.5363 & 5.5582 & 0.0117 \\
+REDS & nominal & Joint gaze, fixed proxy (prior version) & MSE & \% reduction & -1.4498 & -1.9442 & -0.9758 & 0.0117 \\
+REDS & nominal & Joint gaze, fixed proxy (prior version) & Audit PQV & \% reduction & 72.82 & 71.49 & 78.83 & 0.0117 \\
+REDS & nominal & Joint gaze, fixed proxy (prior version) & PSNR & dB gain & -0.0627 & -0.0852 & -0.0411 & 0.0117 \\
+REDS & nominal & Greedy gaze & MSE & \% reduction & -1.9406 & -2.8061 & -1.1062 & 0.0117 \\
+REDS & nominal & Greedy gaze & Audit PQV & \% reduction & 97.35 & 96.97 & 97.76 & 0.0117 \\
+REDS & nominal & Greedy gaze & PSNR & dB gain & -0.0885 & -0.1220 & -0.0580 & 0.0117 \\
+\bottomrule
+\end{tabular}
+\end{table}

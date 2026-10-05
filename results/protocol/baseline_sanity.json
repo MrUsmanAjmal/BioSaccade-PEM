@@ -1,0 +1,27 @@
+{
+  "BasicVSRpp2022_causal": {
+    "frames": 20,
+    "mean_psnr_gain_over_bicubic_db": 3.077344411704604,
+    "passed": true
+  },
+  "BasicVSRpp2022_offline": {
+    "frames": 20,
+    "mean_psnr_gain_over_bicubic_db": 3.7201142089284702,
+    "passed": true
+  },
+  "NanoSR2025": {
+    "frames": 20,
+    "mean_psnr_gain_over_bicubic_db": 1.6165083003381588,
+    "passed": true
+  },
+  "SCMSR2025": {
+    "frames": 20,
+    "mean_psnr_gain_over_bicubic_db": 1.6636530144430104,
+    "passed": true
+  },
+  "SPANF2025": {
+    "frames": 20,
+    "mean_psnr_gain_over_bicubic_db": 1.4906952634266044,
+    "passed": true
+  }
+}
